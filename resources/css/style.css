@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+/* ALERT*/
+#alert-section{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: 20;
+}
+
+#alert-section .alertMessage{
+  background-color: rgb(255, 85, 85);
+  color: white;
+  border-radius: 5px;
+  padding-right: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+  box-shadow: 1px 1px solid black;
+  display: none;
+}
+
+#alert-section .alertMessage p{
+  padding : 0;
+}
+
+
+header{
+  background: url(../img/nature.png);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  height: 100vh;
+}
+
+.loginAndRegisterContainer{
+  background-color: #fff;
+  height: 520px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loginAndRegisterContainer .row{
+  height: 100%;
+}
+
+.loginAndRegisterContainer .image{
+  background: url(../img/cover-girl.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -300px 70px;
+  height: 100%;
+}
+
+.loginAndRegisterContainer h1{
+  padding-top: 30px;
+  font-size: 300%;
+  text-shadow: 1px 1px 6px white;
+  font-weight: lighter;
+}
+
+.loginAndRegisterContainer .logo {
+  width: 300px;
+  height: auto;
+}
+
+.registerSection,
+.loginSection{
+  padding: 1.5%;
+}
+
+.registerSection {
+  display: none;
+}
+
+/* MODAL*/
+.modalContactProfileContainer {
+  width: 100%;
+  height: 200px;
+}
+
+.modalContactProfileCircle{
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.modalContactProfileCircle img{
+  height: 100%;
+}
+
+/* ACCOUNT SECTION  */
+section.account{
+  background: url(../img/nature.png);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  background-attachment: fixed;
+  display:none;
+}
+
+.account .container,
+.account .container .row {
+  height: 100%;
+
+}
+
+
+/*PROFILE*/
+.account .profile {
+  background-color: #fff;
+  height: 100%;
+}
+
+.account .profile .navbar a{
+  color: white;
+}
+
+.account .cover {
+  width: 100%;
+  height: 200px;
+  background: url(../img/nature.png);
+}
+
+.account .profile #profile-data .cover .profilePic-container{
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 1px black;
+  overflow: hidden;
+}
+
+.account .profile #profile-data .info .mobileNo{
+  font-weight: bold;
+  font-size: 130%;
+  letter-spacing: 1.5px;
+  margin-bottom: 0px;
+}
+
+.account .profile #profile-data .info .email{
+  margin-bottom: 0;
+}
+
+.account .profile .buttons {
+  width: 100%;
+}
+
+.account .profile .buttons button:first-child{
+  margin-top: 50px;
+}
+.account .profile .buttons button{
+  margin-bottom: 8px;
+  font-size: 110%;
+  padding: 2%;
+}
+
+
+/* CONTACTS*/
+
+
+.account {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.account .contacts{
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 2%;
+  padding: 0;
+  height: 100%;
+}
+
+.account .contact{
+  padding: 1%;
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+#contact-data{
+  padding: 3%;
+}
+
+.account .contacts .search-container{
+  height: 120px;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.account .contacts .contact .contactPic-container{
+  height: 100px;
+  width: 100px;
+}
+
+.account .contacts .contact .contactPic-rounded{
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  overflow: hidden;
+}
+
+.account .contacts .contact .contactPic-rounded img{
+  height: 100%;
+}
+
+.account .contacts .contact .modifyBtn{
+  height: 100px;
+}
+
+
+.account .contacts .navbar a{
+  color: white;
+}
+
+
+.contactNavbar{
+  display: none;
+}
+
+.contactNavbar img{
+  height: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+
+/*-- SEARCH --*/
+.search-container {
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.contacts .contact .name{
+  font-size: 2.8vh;
+}
+
+
+/*PROFILE NAVIGATION BUTTON TO SHOW CONTACTS*/ 
+
+
+
+@media only screen and (max-width: 991px) {
+
+  .contacts {
+    display: none;
+  }
+
+  .contactNavbar{
+    display: flex;
+  }
+
+  .showContacts{
+    cursor: pointer;
+    display: inline;
+  }
+}
